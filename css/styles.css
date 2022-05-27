@@ -862,6 +862,11 @@ justify-content: center;
   
 }
 
+.form-field:focus+.input-icon,
+.form-field:hover+.input-icon {
+  color: var(--brand-color);
+}
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
