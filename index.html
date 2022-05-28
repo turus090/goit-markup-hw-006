@@ -374,9 +374,9 @@
       <div class="footer-form">
         <h3 class="footer-slogan">Подпишитесь на рассылку</h3>
         <div class="footer-form-wrapper">
-          <label class="label-footer">
+          <form class="label-footer">
             <input class="footer-input" type="email" name="footer-email" placeholder="E-mail" />
-          </label>
+          </form>
           <button type="submit" class="button footer-button">
             <span class="footer-button-title">Подписаться</span>
             <svg class="social-icon" width="24px" height="24px">
@@ -390,6 +390,11 @@
   <!--MODAL-->
   <div data-modal class="backdrop is-hidden">
     <div class="modal">
+      <button data-modal-close class="close-button">
+        <svg class="icon-close" width="16px" height="16px">
+          <use href="./imajes/sprite.svg#icon-close-black"></use>
+        </svg>
+      </button>
       <form class="form">
         <div class="form-content" role="group" aria-labelledby="contact-details-head">
           <p class="form-title" id="contact-details-head">
@@ -404,7 +409,7 @@
           </div>
           <div class="form-field">
             <label class="form-label" for="phone">Телефон</label>
-            <input class="form-input" name="phone" type="phone" id="phone" />
+            <input class="form-input" name="phone" type="tel" id="phone" />
             <svg class="input-icon" width="13px" height="13px">
               <use href="./imajes/sprite.svg#icon-phone"></use>
             </svg>
@@ -413,7 +418,7 @@
             <label class="form-label" for="email">Почта</label>
             <input class="form-input" name="email" type="email" id="email" />
             <svg class="input-icon" width="15px" height="12px">
-              <use href="./imajes/sprite.svg#icon-mail"></use>
+              <use class="use-icon" href="./imajes/sprite.svg#icon-mail"></use>
             </svg>
           </div>
           <div class="form-field">
@@ -435,11 +440,7 @@
         </div>
         <button class="button button-form-modal" type="submit">Отправить</button>
       </form>
-      <button data-modal-close class="close-button">
-        <svg width="16px" height="16px">
-          <use href="./imajes/sprite.svg#icon-close-black"></use>
-        </svg>
-      </button>
+
     </div>
   </div>
   <script src="./js/modal.js"></script>
