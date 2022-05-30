@@ -880,7 +880,7 @@ justify-content: center;
 .form-field:focus+.input-icon,
 .form-field:hover+.input-icon {
   color: var(--brand-color);
-  outline: none;
+  
 }
 
 .backdrop.is-hidden .modal {
@@ -1006,7 +1006,7 @@ justify-content: center;
 .form-input:focus+.input-icon,
 .form-input:hover+.input-icon {
   fill: var(--brand-color);
-  outline: none;
+  
 }
 
 .form-input:focus,
@@ -1030,14 +1030,14 @@ justify-content: center;
 .form-input:hover+.icon-input,
 .form-input:focus+.input-icon {
   fill: var(--brand-color);
-  outline: none;
+  
 }
 
 .input-icon {
   position: absolute;
   top: 55%;
   left: 15px;
-  outline: none;
+  
   fill: var(--title-color);
 
   transition: fill var(--transition-timing-function) var(--transition-duration);
@@ -1048,14 +1048,14 @@ justify-content: center;
 }
 .form-input:focus-within+ .input-icon {
   fill: var(--brand-color);
-  outline: none;
+  
 }
 
 
 
 .form-input:hover-within+.input-icon {
   fill: var(--brand-color);
-  outline: none;
+  
 }
 
 /*.form-input:hover {
