@@ -907,7 +907,7 @@ justify-content: center;
   position: absolute;
   top: 8px;
   right: 8px;
-
+  outline: none;
   width: 30px;
   height: 30px;
 
@@ -1063,10 +1063,7 @@ justify-content: center;
   outline: none;
 }*/
 
-.use-icon:focus {
-  border: 4px solid hsla(0, 0%, 0%, .4);
-  
-}
+ 
 
 
 .form-comment {
@@ -1095,7 +1092,7 @@ outline: none;
 .form-checkbox {
   padding-left: 12px;
   margin-top: 20px;
-
+ outline: none;
 }
 
 .checkbox-text {
@@ -1107,6 +1104,7 @@ outline: none;
 }
 
 .checkbox-link {
+  outline: none;
   color: var(--brand-color);
 }
 
@@ -1119,6 +1117,7 @@ outline: none;
   padding: 0px;
   clip: rect(0 0 0 0);
   overflow: hidden;
+outline: none;
 }
 
 .checkbox-label {
