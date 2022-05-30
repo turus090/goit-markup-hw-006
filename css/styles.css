@@ -635,7 +635,7 @@ justify-content: center;
 
 .social-icon-sab {
   fill: currentColor;
-  mar
+  
 }
 
 .social-link:hover,
@@ -654,12 +654,15 @@ justify-content: center;
 }
 
 .footer-email-input:active {
-  color:var(--brand-color)
+  color:var(--brand-color);
+
+  outline: none;
 }
 
 .footer-input:hover,
 .footer-input:focus {
   border: 1px solid var(--brand-color);
+  outline: none;
   /*outline-color: var(--brand-color);*/
 }
 
@@ -678,6 +681,7 @@ justify-content: center;
   border-radius: 4px;
   cursor: pointer;
   outline: none;
+ /* outline: none;*/
   transition: border-color var(--transition-timing-function) var(--transition-duration), 
  /* outline-color var(--transition-timing-function) var(--transition-duration);*/
 }
@@ -688,6 +692,7 @@ justify-content: center;
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  outline: none;
 }
 
 .footer-button {
@@ -875,6 +880,7 @@ justify-content: center;
 .form-field:focus+.input-icon,
 .form-field:hover+.input-icon {
   color: var(--brand-color);
+  outline: none;
 }
 
 .backdrop.is-hidden .modal {
@@ -886,7 +892,7 @@ justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) /*scale(1.1)*/;
 
   width: 528px;
   height: 581px;
@@ -930,7 +936,7 @@ justify-content: center;
 }
 
 .form {
-  width: 448px;
+  max-width: 448px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -941,6 +947,7 @@ justify-content: center;
 }*/
 
 .form-title {
+  width: 448px;
   margin-bottom: 12px;
   color: var(--title-color);
   font-weight: 700;
@@ -977,18 +984,21 @@ justify-content: center;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: border-color var(--transition-timing-function) var(--transition-duration),
+  transition: border-color var(--transition-timing-function) var(--transition-duration);
   /* outline-color var(--transition-timing-function) var(--transition-duration);*/
+  outline: none;
 }
 
 
 
 .form-comment:hover {
   border-color: var(--brand-color);
+  outline: none;
 }
 
 .form-input:focus-within,
 .form-comment:focus-within {
+  outline: none;
  /* outline-color: var(--brand-color);*/
   border-color: var(--brand-color);
 }
@@ -996,11 +1006,13 @@ justify-content: center;
 .form-input:focus+.input-icon,
 .form-input:hover+.input-icon {
   fill: var(--brand-color);
+  outline: none;
 }
 
 .form-input:focus,
 .form-input:hover {
   border-color: var(--brand-color);
+  outline: none;
 }
 
 
@@ -1018,13 +1030,14 @@ justify-content: center;
 .form-input:hover+.icon-input,
 .form-input:focus+.input-icon {
   fill: var(--brand-color);
+  outline: none;
 }
 
 .input-icon {
   position: absolute;
   top: 55%;
   left: 15px;
-
+  outline: none;
   fill: var(--title-color);
 
   transition: fill var(--transition-timing-function) var(--transition-duration);
@@ -1035,12 +1048,14 @@ justify-content: center;
 }
 .form-input:focus-within+ .input-icon {
   fill: var(--brand-color);
+  outline: none;
 }
 
 
 
 .form-input:hover-within+.input-icon {
   fill: var(--brand-color);
+  outline: none;
 }
 
 /*.form-input:hover {
@@ -1064,7 +1079,7 @@ justify-content: center;
   border-radius: 4px;
   cursor: pointer;
   resize: none;
-
+outline: none;
   transition: border-color var(--transition-timing-function) var(--transition-duration), 
   /*outline-color var(--transition-timing-function) var(--transition-duration);*/ 
 }
@@ -1074,6 +1089,7 @@ justify-content: center;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  outline: none;
 }
 
 .form-checkbox {
